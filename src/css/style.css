@@ -1,0 +1,96 @@
+.slider {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  position: relative;
+}
+
+.slider .slide {
+  background-repeat: no-repeat center cover;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.slider .slide.aparecer {
+  opacity: 1;
+}
+
+.primeiro-slide {
+  background-image: url(../images/flor-rosa.png);
+}
+
+.segundo-slide {
+  background-image: url(../images/flor-amarela.png);
+}
+
+.terceiro-slide {
+  background-image: url(../images/montanha-laranja.png);
+}
+
+.quarto-slide {
+  background-image: url(../images/montanha-azul.png);
+}
+
+.seta-esquerda, .seta-direita {
+  position: absolute;
+  z-index: 1;
+}
+
+.seta-esquerda {
+  left: 4%;
+}
+
+.seta-direita {
+  right: 4%;
+}
+
+.opacidade {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.conteudo {
+  background-color: #fff;
+  margin-left: 180px;
+  padding: 65px 60px;
+  width: 620px;
+  border-radius: 10px;
+}
+
+.conteudo .titulo {
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.conteudo .descricao {
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.conteudo .botao {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.botao.vermelho {
+  color: #C50000;
+}
+
+.botao.amarelo {
+  color: #D9DD10;
+}
+
+.botao.laranja {
+  color: #A63A17;
+}
+
+.botao.azul {
+  color: #10ACDD;
+}
